@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Eyerus Nurlegn</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Dark Mode Toggle -->
+  <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+    <i class="fas fa-moon"></i>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header>
+    <button class="nav-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a></li>
+        <li><a href="projects.html"><i class="fas fa-code"></i> Projects</a></li>
+        <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="content-section">
+      <h2>Get In Touch</h2>
+      <p>Have a project in mind or want to discuss opportunities? Feel free to reach out!</p>
+      
+      <form id="contactForm" class="contact-form">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="Your Email" required>
+        </div>
+		<div class="password-section">
+  <label for="password">Create Password:</label>
+  <input type="password" class ="form-control" id="password" placeholder="Enter password" oninput="checkStrength(this.value)" />
+  <div class="strength" id="strengthText">Password strength will appear here</div>
+</div>
+        <div class="form-group">
+          <textarea class="form-control" placeholder="Your Message" required></textarea>
+		  <!-- Password Section -->
+
+        </div>
+        <button type="submit" class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </form>
+      
+    <div class="social-links">
+  <a href="https://github.com/Jerusalem-33" target="_blank"><i class="fab fa-github"></i></a>
+  <a href="mailto:jerrynure@gmail.com"><i class="fas fa-envelope"></i></a>
+  <a href="https://www.linkedin.com/in/eyerus-nurelgn-690b3b360?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://t.me/@fikermom" target="_blank"><i class="fab fa-telegram"></i></a>
+  <a href="https://twitter.com/eyerus" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+
+
+<!-- Phone Number Section -->
+<div class="phone_number">
+  <p>
+    <a href="#" target="_blank">
+      <img src="phone.png" alt="Phone Icon" width="30" height="30"> 0965918275
+    </a>
+  </p>
+</div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+   <p>&copy; 2025 Eyerus Nurlegn.University of Gondar Department Of Computer Science.</p>
+   
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
